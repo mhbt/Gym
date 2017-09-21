@@ -181,6 +181,76 @@
 .carousel {
   perspective: 9500px;
 }
+.carousel-banner{
+  /*z-index = 10;*/
+  font-size: 2.5em;
+  color: #FFFAFF;
+  position: absolute;
+  left: 3%;
+  top: 30%;
+  width: 50%;
+}
+.bg-orange {
+  background-color: #F85A3E;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  padding: 20px 20px 2px;
+  transform: skewX(-20deg);
+
+}
+.bg-orange .text {
+  transform: skewX(20deg);
+}
+.bg-dots {
+  height:inherit;
+  background: #F85A3E url("/assets/images/dots1.png") repeat center center;
+}
+.carousel-content .feature {
+  /*background-color: black;*/
+  display: block;
+  width: 400px;
+  height: 100px;
+  margin: 80px;
+  text-align: center;
+}
+.feature-icon-container {
+  float:left;
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background: #F85A3E url("/assets/images/dots1.png") repeat center center;
+  position: relative;
+  border-radius: 50%;
+}
+.feature-icon {
+  /*font-size: 1.05em;*/
+  border-radius: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 5px 5px;
+  /*background-color: yellow;*/
+  border: 2px dashed white;
+}
+.feature-text {
+  height: inherit;
+  /*background-color: yellow;*/
+  font-size: 30px;
+  color: white;
+  padding-left: 10px;
+  float:left;
+  width: 75%;
+  display: inline-block;
+  position: relative;
+}
+.feature-text .data {
+  position: absolute;
+  top:30%;
+  left:10%;
+}
+.bg-orange,.carousel-content .feature, .feature-icon, .feature-text .data, .bg-orange .text {
+  transition: all 0.5s ease 1.0s;
+}
 @keyframes carousel1{
   0% {
     transform: rotateX(0deg);
@@ -314,7 +384,7 @@
 
 }
 /*Media Queries*/
-@media (max-width: 1150px ){
+@media (max-width: 1000px ){
   .header-top {
     min-height: 100px;
   }
@@ -341,6 +411,36 @@
   }
 }
 @media (max-width: 1335px) {
+  .carousel-banner {
+    top:20%;
+  }
+  .carousel-content .feature {
+    font-size: 0.5em;
+    display: block;
+    text-align: left;
+    width:auto;
+    height: auto;
+
+  }
+  .feature-text {
+    margin-top: 15px;
+    height: auto;
+    line-height: 42px;
+    font-size: 20px;
+    color: white;
+    padding-left: 0;
+    width: 100%;
+
+  }
+  .feature-text .data {
+    position: static;
+  }
+  .feature-icon-container {
+    display: none;
+  }
+  .bg-orange {
+    font-size: 20px;
+  }
   .brand {
     width:30%;
   }
