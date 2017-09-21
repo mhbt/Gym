@@ -2,15 +2,44 @@
 /*---------------------Carousel
 --------------------------------------------------------------------------*/
 .carousel {
+  font-size: 16px;
   position: relative;
-  con
-}
-.carousel-content {
   width: 100%;
+}
+.carousel-content ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: block;
-  background-position: center;
-  background-size: cover;
+}
+.carousel-content li {
+  display: none;
+  visibility: hidden;
+}
+.carousel-content li.active {
+  display: inline;
+  visibility: visible;
 }
 .carousel-image {
   width: 100%;
+  height: 100%;
+}
+.carousel-control {
+  position: absolute;
+  font-size: 150%;
+}
+.carousel-control.left{
+  left:3%;
+  top:50%;
+}
+.carousel-control.right{
+  right:3%;
+  top:50%;
+}
+.carousel-control a{
+  color: inherit;
+  width: inherit;
+}
+.carousel-control a:hover{
+  text-decoration: none;
 }
