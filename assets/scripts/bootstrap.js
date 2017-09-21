@@ -31,3 +31,19 @@ if(document.querySelector(".carousel")){
      carousel.content[carousel.pointer].classList.toggle("active");
    }, false);
   }
+// Crousel End
+
+// Affix Started
+if (document.querySelector(".affix")){
+  var affix = document.querySelector(".affix");
+  console.log("affix enabled");
+  var offset = affix.getAttribute("data-offset");
+  offset = parseInt(offset);
+  window.onscroll = ()=> {
+    if(offset > window.scrollY) {
+      if (affix.classList.contains("fix-affix"))  affix.classList.remove("fix-affix");
+    } else {
+      if (!affix.classList.contains("fix-affix"))  affix.classList.add("fix-affix");
+    }
+  }
+}

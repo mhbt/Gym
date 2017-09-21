@@ -43,3 +43,10 @@
 .carousel-control a:hover{
   text-decoration: none;
 }
+/*--------------Affix--------------
+------------------------------------------------*/
+.fix-affix {
+  position: fixed;
+  top:0;
+
+}

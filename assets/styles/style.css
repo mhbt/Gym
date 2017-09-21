@@ -128,8 +128,22 @@
 }
 .menu-wrapper {
   margin: 0 70px;
-  /*position: fixed;*/
-  /*top:0;*/
+}
+.menu-wrapper.fix-affix {
+  background-color: rgba(255,255,255,1);
+  width:100%;
+  margin: 0 0;
+  padding: 0% 5%;
+  transition: padding 0.4s cubic-bezier(1,.49,0,.43);
+}
+.menu-wrapper.fix-affix .brand img{
+  padding-top: 15px;
+  width: 200px;
+  transition: width 0.4s ease;
+}
+.menu-wrapper.fix-affix .menu a{
+  padding: 25px 15px;
+  transition: width 0.4s ease;
 }
 .brand {
   width: 30%;
@@ -301,6 +315,9 @@
 }
 /*Media Queries*/
 @media (max-width: 1150px ){
+  .header-top {
+    min-height: 100px;
+  }
   .header-contact-us {
     padding: 15px 0px;
     width:100%;
