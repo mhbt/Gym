@@ -1,5 +1,5 @@
 /*Contains the generic bootstrap content used in this site*/
-/*---------------------Carousel
+/*---------------------Carousel----------------------------------------
 --------------------------------------------------------------------------*/
 .carousel {
   font-size: 16px;
@@ -43,10 +43,24 @@
 .carousel-control a:hover{
   text-decoration: none;
 }
-/*--------------Affix--------------
+/*--------------Affix--------------------------
 ------------------------------------------------*/
 .fix-affix {
   position: fixed;
   top:0;
 
+}
+/* ------------Container------------------------
+--------------------------------------------------*/
+/*Grid System*/
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  background-color: lightgray;
+}
+.col-2 {
+  grid-template-columns: 50% 50%;
+  grid-column-gap: none;
+  margin-left: auto;
+  margin-right: auto;
 }

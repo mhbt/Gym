@@ -1,4 +1,5 @@
-
+// carousel handles
+//-----------------------------------------------------------------------------
 if(document.querySelector(".carousel")){
     var carousel = {
         content: document.querySelectorAll(".carousel-content li"),
@@ -31,9 +32,11 @@ if(document.querySelector(".carousel")){
      carousel.content[carousel.pointer].classList.toggle("active");
    }, false);
   }
-// Crousel End
+  // carousel handles End
+  //-----------------------------------------------------------------------------
 
-// Affix Started
+// Affix Handles
+// -----------------------------------------------------------------------------
 if (document.querySelector(".affix")){
   var affix = document.querySelector(".affix");
   console.log("affix enabled");
@@ -47,3 +50,5 @@ if (document.querySelector(".affix")){
     }
   }
 }
+// ------------End Affix Handles------------------------------------------
+// -----------------------------------------------------------------------------
