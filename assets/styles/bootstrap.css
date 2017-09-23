@@ -1,3 +1,20 @@
+/*------------------------General Styles-----------------------
+--------------------------------------------------------------*/
+/*Box-model Fix*/
+  html {
+    box-sizing: border-box !important;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+/*Float Fix*/
+  .clear-floats {
+    content:'';
+    display: table;
+    clear:both;
+  }
+
+
 /*Contains the generic bootstrap content used in this site*/
 /*---------------------Carousel----------------------------------------
 --------------------------------------------------------------------------*/
@@ -64,3 +81,472 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/*container System*/
+.container {
+  width:100%;
+  padding: 15px 30px;
+}
+.row{
+  display: block;
+  margin: -15px -30px;
+}
+.row > *{
+  width: 100%;
+  min-height: 100px;
+  /*position: relative;*/
+  /*margin: 20px;*/
+}
+.row > *::after {
+  content:'';
+  display: table;
+  clear:both;
+}
+.row >*::before {
+  content:'';
+  display: table;
+  clear:both;
+}
+
+
+@media (min-width: 100px) {
+  .row > *::after {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row > *::before {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row > * {
+    float:left;
+  }
+  .col-xs-1 {
+    width: 99%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-2 {
+    width: 49%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-3 {
+    width: 32.33%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-4 {
+    width: 24%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-5 {
+    width: 19%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-6 {
+    width: 15.67%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-7 {
+    width: 13.286%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-8 {
+    width: 11.5%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-9 {
+    width: 11.11%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-10 {
+    width: 10%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-11 {
+    width: 9.09%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xs-12 {
+    width: 8.3%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+}
+@media (min-width: 480px){
+  .row *::after {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row *::before {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row > * {
+    float:left;
+  }
+  .col-sm-1 {
+    width: 99%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-2 {
+    width: 49%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-3 {
+    width: 32.33%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-4 {
+    width: 24%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-5 {
+    width: 19%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-6 {
+    width: 15.67%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-7 {
+    width: 13.286%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-8 {
+    width: 11.5%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-9 {
+    width: 11.11%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-10 {
+    width: 10%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-11 {
+    width: 9.09%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-sm-12 {
+    width: 8.3%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+}
+@media (min-width: 768px){
+  .row > *::after {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row > *::before {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row > * {
+    float:left;
+  }
+  .col-md-1 {
+    width: 99%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-2 {
+    width: 49%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-3 {
+    width: 32.33%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-4 {
+    width: 24%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-5 {
+    width: 19%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-6 {
+    width: 15.67%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-7 {
+    width: 13.286%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-8 {
+    width: 11.5%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-9 {
+    width: 11.11%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-10 {
+    width: 10%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-11 {
+    width: 9.09%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-md-12 {
+    width: 8.3%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+}
+@media (min-width: 992px){
+  .row > *::after {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row > *::before {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row > * {
+    float:left;
+  }
+  .col-lg-1 {
+    width: 99%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-2 {
+    width: 49%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-3 {
+    width: 32.33%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-4 {
+    width: 24%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-5 {
+    width: 19%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-6 {
+    width: 15.67%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-7 {
+    width: 13.286%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-8 {
+    width: 11.5%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-9 {
+    width: 11.11%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-10 {
+    width: 10%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-11 {
+    width: 9.09%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-lg-12 {
+    width: 8.3%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+}
+@media (min-width: 1200px){
+  .row > *::after {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row > *::before {
+    content:'';
+    display: table;
+    clear:both;
+  }
+  .row > * {
+    float:left;
+  }
+  .col-xlg-1 {
+    width: 99%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-2 {
+    width: 49%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-3 {
+    width: 32.33%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-4 {
+    width: 24%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-5 {
+    width: 19%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-6 {
+    width: 15.67%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-7 {
+    width: 13.286%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-8 {
+    width: 11.5%;
+    margin: 0.5%;
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-9 {
+    width: 11.11%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-10 {
+    width: 10%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-11 {
+    width: 9.09%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  }
+  .col-xlg-12 {
+    width: 8.3%;
+    /*margin: 0.5%;*/
+    min-height: 100px;
+    /*border: 1px solid black;*/
+  lg
+}
+
+
+/*@media (width : 320px) {
+  .col-xs
+
+}*/
