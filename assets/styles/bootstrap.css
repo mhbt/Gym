@@ -67,6 +67,36 @@
   top:0;
 
 }
+/* Slider Slidehshow--------------------------------
+---------------------------------------------------------- */
+.slideshow {
+  width: 100%;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+}
+.slideshow > ul {
+  list-style: none;
+  display: block;
+}
+.slideshow > .slides > li {
+  display: none;
+}
+.slideshow > .slides li.active {
+  display: block;
+}
+.slideshow  .slide-pointer > li{
+  display: inline-block;
+}
+.slide-pointer > li > a{
+  color:gray;
+}
+.slide-pointer > li > a:hover, .slide-pointer > li.active > a{
+  color:white;
+}
+
+
+
 /* ------------Container------------------------
 --------------------------------------------------*/
 /*Grid System*/

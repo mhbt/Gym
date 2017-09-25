@@ -52,3 +52,23 @@ if (document.querySelector(".affix")){
 }
 // ------------End Affix Handles------------------------------------------
 // -----------------------------------------------------------------------------
+
+
+//Slide Show mainly text
+if(document.querySelector(".slideshow")){
+  console.log("slideshow enabled");
+  var slides  = document.querySelectorAll(".slide");
+  var slide_ptr = document.querySelectorAll(".slide-pointer li");
+  slide_ptr.forEach((item, index)=>{
+      item.addEventListener("click",displaySlide, true);
+  });
+  function displaySlide(e){
+    e.preventDefault();
+    // this.parentNode.querySelector("li.active").classList.toggle("active");
+    slide_ptr.querySelector("")
+    slides.forEach(selectSlide);
+  }
+  function selectSlide(item, index){
+
+  }
+}

@@ -733,6 +733,21 @@
   animation-name: slide-right;
   animation-play-state: running;
 }
+.blogs {
+  background: transparent url("/assets/images/walking-bg.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  width:100%;
+}
+.blogs .blogs-content{
+  padding: 10% 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+  height: 70%;
+}
 /*---------------------headings---------------------------------------
 --------------------------------------------------------------------------*/
 .benefit, .heading-container {
