@@ -95,7 +95,7 @@ if(document.querySelector(".slideshow")){
           slides[toToggle.active].classList.toggle("slide-to-left");
           slides[toToggle.active].classList.toggle("active");
           slides[toToggle.clicked].classList.toggle("slide-from-right");
-        },450);
+        },1010);
       }
       else if(toToggle.active > toToggle.clicked){
         slides[toToggle.active].classList.toggle("slide-to-right");
@@ -104,7 +104,7 @@ if(document.querySelector(".slideshow")){
           slides[toToggle.active].classList.toggle("slide-to-right");
           slides[toToggle.active].classList.toggle("active");
           slides[toToggle.clicked].classList.toggle("slide-from-left");
-        },450);
+        },1010);
       }
   }
 }

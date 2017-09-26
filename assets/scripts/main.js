@@ -38,9 +38,9 @@ if(document.querySelector(".slider")){
   buttons.next.addEventListener("click",slide_right,false);
 function slide_right(e){
   e.preventDefault();
-  document.querySelector(".slider").classList.add("slide-left");
+  document.querySelector(".slider").classList.add("slide-to-left");
   document.querySelector(".slider").addEventListener("animationend",function(){
-    document.querySelector(".slider").classList.remove("slide-left");
+    document.querySelector(".slider").classList.remove("slide-to-left");
   });
   // setTimeout(function(){
   //   document.querySelector(".slider").style.animationPlayState = "paused";
@@ -71,9 +71,9 @@ function slide_right(e){
 }
 function slide_left(e){
   e.preventDefault();
-  document.querySelector(".slider").classList.add("slide-right");
+  document.querySelector(".slider").classList.add("slide-to-right");
   document.querySelector(".slider").addEventListener("animationend",function(){
-    document.querySelector(".slider").classList.remove("slide-right");
+    document.querySelector(".slider").classList.remove("slide-to-right");
   });
   // document.querySelector(".slider").style.animationName = "slide-left";
   // document.querySelector(".slider").style.animaationIterationCount = "1";
