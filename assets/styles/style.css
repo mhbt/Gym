@@ -763,6 +763,9 @@
 .slide .time i {
   color: rgb(242,90,68);
 }
+.slide .buttons {
+  margin: 30px 0;
+}
 .slide button {
   min-width: 100px;
   width: 26%;

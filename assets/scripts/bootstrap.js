@@ -79,9 +79,15 @@ if(document.querySelector(".slideshow")){
           toToggle.active = index;
         }
       });
-      slide_ptr[toToggle.clicked].classList.toggle("active");
-      slide_ptr[toToggle.active].classList.toggle("active");
-      slides[toToggle.clicked].classList.toggle("active");
+      // slides[toToggle.clicked].classList.toggle("active");
+      if(toToggle.active == toToggle.clicked){
+          return;
+      }
+      else {
+        slide_ptr[toToggle.clicked].classList.toggle("active");
+        slide_ptr[toToggle.active].classList.toggle("active");
+        slides[toToggle.clicked].classList.toggle("active");
+      }
       if(toToggle.active < toToggle.clicked){
         slides[toToggle.active].classList.toggle("slide-to-left");
         slides[toToggle.clicked].classList.toggle("slide-from-right");

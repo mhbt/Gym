@@ -73,10 +73,10 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  height: auto;
   display: block;
   color: #ffffff;
   text-align: center;
-  /*perspective: 0px;*/
 }
 .slideshow > ul {
   list-style: none;
@@ -87,7 +87,7 @@
 }
 .slideshow > .slides li.active {
   display: inline-block;
-  perspective: 1000px;
+  width: inherit;
 }
 .slideshow  .slide-pointer > li{
   display: inline-block;
