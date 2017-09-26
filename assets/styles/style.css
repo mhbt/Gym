@@ -704,6 +704,7 @@
 }
 .heading-container { /*to make heading relative to buttons*/
   position: relative;
+  background-color: #fff;
 }
 .slider-btn.next {
   right:0%;
@@ -747,7 +748,8 @@
   margin-right: auto;
   display: block;
   width: 90%;
-  height: 70%;
+  height: 100%;
+  position: relative;
 }
 .slideshow {
   text-align: left;
@@ -764,7 +766,7 @@
   color: rgb(242,90,68);
 }
 .slide .buttons {
-  margin: 30px 0;
+  margin: 50px 0;
 }
 .slide button {
   min-width: 100px;
@@ -803,6 +805,9 @@
   display: inline-block;
   margin-left: 10px;
   transition: all 0.5s ease;
+}
+.slideshow .slide-pointer li.active a {
+  color: #F85A3E;
 }
 /*---------------------headings---------------------------------------
 --------------------------------------------------------------------------*/
@@ -1154,7 +1159,7 @@
     width: 100%;
   }
   to {
-    position: absolute;
+    /*position: absolute;*/
     margin-left: 0%;
     /*left:100%;*/
     width: 100%;
