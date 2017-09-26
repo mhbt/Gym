@@ -70,10 +70,13 @@
 /* Slider Slidehshow--------------------------------
 ---------------------------------------------------------- */
 .slideshow {
+  overflow: hidden;
+  position: relative;
   width: 100%;
   display: block;
   color: #ffffff;
   text-align: center;
+  /*perspective: 0px;*/
 }
 .slideshow > ul {
   list-style: none;
@@ -83,16 +86,66 @@
   display: none;
 }
 .slideshow > .slides li.active {
-  display: block;
+  display: inline-block;
+  perspective: 1000px;
 }
 .slideshow  .slide-pointer > li{
   display: inline-block;
 }
 .slide-pointer > li > a{
   color:gray;
+  margin: 0 10px;
 }
 .slide-pointer > li > a:hover, .slide-pointer > li.active > a{
   color:white;
+}
+.slide-from-left {
+  animation: slide-from-left;
+  animation-duration: 0.5s;
+}
+.slide-to-left {
+  animation: slide-to-left;
+  animation-duration: 0.5s;
+}
+.slide-to-right {
+  animation: slide-to-right;
+animation-duration: 0.5s;
+}
+.slide-from-right {
+  animation: slide-from-right;
+  animation-duration: 0.5s;
+}
+@keyframes slide-to-left {
+  from {
+      transform: translate3d(0,0 , 0);
+  }
+  to {
+      transform: translate3d(-1500px, 0 , 0);
+  }
+}
+@keyframes slide-from-left {
+  from {
+      transform: translate3d(-1500px, 0 , 0);
+  }
+  to {
+      transform: translate3d(0px, 0 , 0);
+  }
+}
+@keyframes slide-to-right {
+  from {
+      transform: translate3d(0px, 0 , 0);
+  }
+  to {
+      transform: translate3d(1500px, 0 , 0);
+  }
+}
+@keyframes slide-from-right {
+  from {
+      transform: translate3d(1500px, 0 , 0);
+  }
+  to {
+      transform: translate3d(0px, 0 , 0);
+  }
 }
 
 
@@ -580,3 +633,14 @@
   .col-xs
 
 }*/
+
+
+
+
+
+
+
+
+
+/*---------------------Animations---------------------
+-----------------------------------------------------*/

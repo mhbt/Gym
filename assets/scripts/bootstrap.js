@@ -57,18 +57,48 @@ if (document.querySelector(".affix")){
 //Slide Show mainly text
 if(document.querySelector(".slideshow")){
   console.log("slideshow enabled");
-  var slides  = document.querySelectorAll(".slide");
+  var slides  = document.querySelectorAll(".slides li");
   var slide_ptr = document.querySelectorAll(".slide-pointer li");
   slide_ptr.forEach((item, index)=>{
       item.addEventListener("click",displaySlide, true);
   });
+  var slide_animations = ["slide-to-left","slide-from-left","slide-to-right","slide-from-right"];
+  var _this;
   function displaySlide(e){
     e.preventDefault();
-    // this.parentNode.querySelector("li.active").classList.toggle("active");
-    slide_ptr.querySelector("")
-    slides.forEach(selectSlide);
-  }
-  function selectSlide(item, index){
-
+    var toToggle ={
+      clicked:null,
+      active: null
+    };
+    _this = this;
+    slide_ptr.forEach((slide,index)=>{
+        if(slide.isSameNode(this)) {
+          toToggle.clicked = index;
+        }
+        if(slide.classList.contains("active")=== true){
+          toToggle.active = index;
+        }
+      });
+      slide_ptr[toToggle.clicked].classList.toggle("active");
+      slide_ptr[toToggle.active].classList.toggle("active");
+      slides[toToggle.clicked].classList.toggle("active");
+      if(toToggle.active < toToggle.clicked){
+        slides[toToggle.active].classList.toggle("slide-to-left");
+        slides[toToggle.clicked].classList.toggle("slide-from-right");
+        setTimeout(()=>{
+          slides[toToggle.active].classList.toggle("slide-to-left");
+          slides[toToggle.active].classList.toggle("active");
+          slides[toToggle.clicked].classList.toggle("slide-from-right");
+        },450);
+      }
+      else if(toToggle.active > toToggle.clicked){
+        slides[toToggle.active].classList.toggle("slide-to-right");
+        slides[toToggle.clicked].classList.toggle("slide-from-left");
+        setTimeout(()=>{
+          slides[toToggle.active].classList.toggle("slide-to-right");
+          slides[toToggle.active].classList.toggle("active");
+          slides[toToggle.clicked].classList.toggle("slide-from-left");
+        },450);
+      }
   }
 }

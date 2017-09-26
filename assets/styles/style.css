@@ -713,7 +713,7 @@
 }
 .slider-item.active {
   display: block;
-  visibility: visible;
+  visibility: visible
   /*animation: slide-left 0.5s ease;*/
 }
 .slider-item{
@@ -728,6 +728,7 @@
 }
 .slide-left {
   animation-name: slide-left;
+  animation-play-state: running;
 }
 .slide-right {
   animation-name: slide-right;
@@ -741,12 +742,64 @@
   width:100%;
 }
 .blogs .blogs-content{
-  padding: 10% 0;
+  padding: 5% 0;
   margin-left: auto;
   margin-right: auto;
   display: block;
   width: 90%;
   height: 70%;
+}
+.slideshow {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+}
+.slide .time {
+  display: block;
+}
+.slide .time .text, .slide .time i {
+  display: inline-block;
+  padding-right: 10px;
+}
+.slide .time i {
+  color: rgb(242,90,68);
+}
+.slide button {
+  min-width: 100px;
+  width: 26%;
+  height: 50px;
+  color: white;
+  margin-right: 5%;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.slide button.details {
+  background-color: transparent;
+  border: 2px solid #fff;
+
+}
+.slide button.buy {
+  background-color: #F85A3E;
+  border: 2px solid #F85A3E;
+  border: none;
+
+}
+.slide button > .caret {
+  visibility: collapse;
+  margin-left: 0%;
+
+}
+.slide button:hover {
+  background-color: #2b2c2d;
+  border: 1px solid #2b2c2d;
+  transition: background 1s ease;
+}
+.slide button:hover > .caret {
+  visibility: visible;
+  display: inline-block;
+  margin-left: 10px;
+  transition: all 0.5s ease;
 }
 /*---------------------headings---------------------------------------
 --------------------------------------------------------------------------*/
