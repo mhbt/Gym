@@ -242,6 +242,9 @@
 .bg-orange,.carousel-content .feature, .feature-icon, .feature-text .data, .bg-orange .text {
   transition: all 0.5s ease 1.0s;
 }
+.carousel {
+  position: relative;
+}
 .carousel-content img {
   animation: carousel1 1s ease-in;
   /*transition: transform 0.5s ease 0.5s;*/
@@ -287,23 +290,18 @@
 
 /*------------------------------Containers---------------------------------
 ----------------------------------------------------------------------------*/
-.home-banner {
+.home-banner .row {
+  position: relative;
   margin-top: -10%;
   z-index: 3;
   background-color: #FFFAFF;
 
 }
 .home-banner img {
-  width: 90%;
+  width: 100%;
 }
-.home-banner  .grid-item.left {
-  text-align: right;
-  float: left;
-}
-.home-banner .grid-item.right {
-  text-align: left;
-  margin-top: -16px;
-  float: left;
+.home-banner .banner-right {
+  margin-top: -15px;
 }
 .benefit .grid.col-2 {
   margin-top: 3%;
@@ -924,7 +922,7 @@
   color: rgba(242,90,68,0.9);
 }
 .iphone {
-  min-height: 600px;
+  min-height: 500px;
   background: transparent url("/assets/images/background.png");
   background-size: contain;
   position: relative;
@@ -937,7 +935,7 @@
 .iphone .arrow {
   width: 150px;
   position: absolute;
-  left: 70px;
+  left: 50px;
   top: 100px;
 }
 .iphone h1 {
@@ -946,7 +944,7 @@
   margin-bottom: 1px;
 }
 .iphone img {
-  /*padding-top: 40px;*/
+  margin-bottom: -30px;
 }
 .iphone li .fa {
   padding-right: 10px;
@@ -1021,6 +1019,70 @@
   color: #fff;
   background-color: rgba(242,90, 68, 1);
   border: 1px solid rgba(242,90, 68, 0.5);
+}
+.satisfaction .heading-container {
+  text-align: left;
+  margin: 0;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+.satisfaction .heading-container h1 .h1 {
+  font-size: 20px;
+  padding-right: 20px;
+  padding: 6px 20px 6px 0;;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.testimonials {
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+}
+.testimonials .slideshow2{
+  color: #000;
+}
+.testimonials .slideshow2 .block-quote{
+    text-align: right;
+}
+.testimonials .slideshow2 .fa-quote-left{
+  color: #c1c1c1;
+  font-size: 42px;
+}
+.testimonials  .slide-pointers-2{
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+}
+.testimonials .slide-pointers-2 li {
+  display: inline-block;
+  padding-left: 30px;
+}
+.testimonials .slides2 {
+  list-style: none;
+}
+.testimonials .slides2 li{
+  visibility: collapse;
+  display: none;
+}
+.testimonials .slides2 li.active {
+  display: block;
+  visibility: visible;
+  color: #000;
+  position: absolute;
+}
+.testimonials .slide-pointers-2 li.active a{
+  color: rgba(242, 90, 68, 1);
+}
+.testimonials .slide-pointers-2  a{
+  color: #c1c1c1;
+}
+.testimonials .slideshow2 a:hover{
+  color: rgba(242, 90, 68, 1);
+}
+.faq {
+  color: black;
 }
 footer {
   font-family: 'Raleway', sans-serif;
@@ -1133,6 +1195,37 @@ footer .locus{
 footer .loca {
   margin:  20px 0;
 }
+.footer-cr {
+  padding: 0px;
+  padding-top: 3px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -15px;
+  background-color: rgba(242, 90, 68, 1);
+  clip-path:polygon(0 100%, 5% 0%, 95% 0%, 100% 100%);
+}
+.footer-cr .text {
+  padding-top: 10px;
+}
+.footer-cr ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-cr li {
+  margin: 0;
+  display: inline-block;
+  width: 40px;
+  height:40px;
+  background-color: rgba(255,255,255, 0.1);
+  margin-right: 12px;
+  text-align: center;
+  border-radius: 50%;
+}
+.footer-cr li a{
+
+  line-height: 40px;
+}
 
 /*---------------------headings---------------------------------------
 --------------------------------------------------------------------------*/
@@ -1155,7 +1248,11 @@ footer .loca {
 /*------------------------------Media Queries---------------------------------
 ------------------------------------------------------------------------------*/
 @media (max-width: 1000px ){ /*Readjustments*/
-
+  .footer-cr {
+    clip-path: none;
+    width:100%;
+    text-align: center;
+  }
   .header-top {
     min-height: 100px;
   }
@@ -1251,9 +1348,6 @@ footer .loca {
   }
 }
 @media (max-width: 768px) { /*Tablets and mobile*/
-  .home-banner img {
-    width: 100%;
-  }
   .carousel-control.right, .carousel-control.left {
     top: 20%;
   }

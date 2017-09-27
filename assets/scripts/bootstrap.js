@@ -57,8 +57,8 @@ if (document.querySelector(".affix")){
 //Slide Show mainly text
 if(document.querySelector(".slideshow")){
   console.log("slideshow enabled");
-  var slides  = document.querySelectorAll(".slides li");
-  var slide_ptr = document.querySelectorAll(".slide-pointer li");
+  var slides  = document.querySelectorAll(".slideshow .slides li");
+  var slide_ptr = document.querySelectorAll(".slideshow .slide-pointer li");
   slide_ptr.forEach((item, index)=>{
       item.addEventListener("click",displaySlide, true);
   });
@@ -104,6 +104,61 @@ if(document.querySelector(".slideshow")){
           slides[toToggle.active].classList.toggle("slide-to-right");
           slides[toToggle.active].classList.toggle("active");
           slides[toToggle.clicked].classList.toggle("slide-from-left");
+        },1010);
+      }
+  }
+}
+
+//second redundant slideshow
+if(document.querySelector(".slideshow2")){
+  console.log("slideshow2 enabled");
+  var slides2  = document.querySelectorAll(".slideshow2 .slides2 li");
+  var slide_ptr2 = document.querySelectorAll(".slideshow2 .slide-pointers-2 li");
+  slide_ptr2.forEach((item, index)=>{
+      item.addEventListener("click",displaySlide2, true);
+  });
+  var slide_animations = ["slide-to-left","slide-from-left","slide-to-right","slide-from-right"];
+  var _this2;
+  function displaySlide2(e){
+    e.preventDefault();
+    var toToggle ={
+      clicked:null,
+      active: null
+    };
+    _this2 = this;
+    slide_ptr2.forEach((slide,index)=>{
+        if(slide.isSameNode(this)) {
+          toToggle.clicked = index;
+        }
+        if(slide.classList.contains("active")=== true){
+          toToggle.active = index;
+        }
+      });
+      // slides[toToggle.clicked].classList.toggle("active");
+      if(toToggle.active == toToggle.clicked){
+          return;
+      }
+      else {
+        slide_ptr2[toToggle.clicked].classList.toggle("active");
+        slide_ptr2[toToggle.active].classList.toggle("active");
+        slides2[toToggle.clicked].classList.toggle("active");
+      }
+      if(toToggle.active < toToggle.clicked){
+        slides2[toToggle.active].classList.toggle("slide-to-left");2
+        slides2[toToggle.clicked].classList.toggle("slide-from-right");
+        setTimeout(()=>{
+          slides2[toToggle.active].classList.toggle("slide-to-left");
+          slides2[toToggle.active].classList.toggle("active");
+          slides2[toToggle.clicked].classList.toggle("slide-from-right");
+        },1010);
+      }
+      else if(toToggle.active > toToggle.clicked){
+        slides2[toToggle.active].classList.toggle("slide-to-right");
+        slides2[toToggle.clicked].classList.toggle("slide-from-left");
+        setTimeout(()=>{
+          slides2[toToggle.active].classList.toggle("slide-to-right");
+          slides2[toToggle.active].classList.toggle("active");
+          slides2[toToggle.clicked].classList.toggle("slide-from-left");
         },1010);
       }
   }
