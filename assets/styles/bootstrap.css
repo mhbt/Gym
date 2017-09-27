@@ -13,7 +13,10 @@
     display: table;
     clear:both;
   }
-
+  .padding {
+    padding: 30px 40px;
+    width: 100%;
+  }
 
 /*Contains the generic bootstrap content used in this site*/
 /*---------------------Carousel----------------------------------------
@@ -175,6 +178,7 @@ animation-duration: 1s;
 .container {
   width:100%;
   padding: 15px 30px;
+  /*background-color: lightgray; /*added for convinience*/
 }
 .row{
   display: block;
@@ -182,16 +186,16 @@ animation-duration: 1s;
 }
 .row > *{
   width: 100%;
-  min-height: 100px;
+  min-height: 10px;
   /*position: relative;*/
   /*margin: 20px;*/
 }
-.row > *::after {
+.row *::after {
   content:'';
   display: table;
   clear:both;
 }
-.row >*::before {
+.row *::before {
   content:'';
   display: table;
   clear:both;
@@ -211,6 +215,9 @@ animation-duration: 1s;
   }
   .row > * {
     float:left;
+  }
+  .col-text-center {
+    text-align: center;
   }
   .col-xs-1 {
     width: 99%;
@@ -284,6 +291,56 @@ animation-duration: 1s;
     min-height: 100px;
     /*border: 1px solid black;*/
   }
+  /* fields */
+  .f-xs-12 {
+    width: 99%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-11 {
+    width: 90.75%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-10 {
+    width: 82.5%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-9 {
+    width: 74.25%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-8 {
+    width: 66%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-7 {
+    width: 57.75%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-6 {
+    width: 49.5%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-5 {
+    width: 41.25%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-4 {
+    width:33%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-3 {
+    width: 24.75%;
+    margin: 0.5%;
+  }
+  .f-xs-2 {
+    width: 16.5%;
+    /*margin: 2%;%;*/
+  }
+  .f-xs-1 {
+    width: 8.25%;
+    /*margin: 2%;%;*/
+  }
+  /* fields end*/
   @keyframes slide-to-left {
     from {
         transform: translate3d(0,0 , 0);
@@ -403,6 +460,55 @@ animation-duration: 1s;
     min-height: 100px;
     /*border: 1px solid black;*/
   }
+  /* fields */
+  .f-sm-12 {
+    width: 99%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-11 {
+    width: 90.75%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-10 {
+    width: 82.5%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-9 {
+    width: 74.25%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-8 {
+    width: 66%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-7 {
+    width: 57.75%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-6 {
+    width: 49.5%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-5 {
+    width: 41.25%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-4 {
+    width:33%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-3 {
+    width: 24.75%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-2 {
+    width: 16.5%;
+    /*margin: 0.2%;*/
+  }
+  .f-sm-1 {
+    width: 8.25%;
+    /*margin: 0.2%;*/
+  }
 }
 @media (min-width: 768px){
   .row > *::after {
@@ -489,6 +595,55 @@ animation-duration: 1s;
     /*margin: 0.5%;*/
     min-height: 100px;
     /*border: 1px solid black;*/
+  }
+  /* fields */
+  .f-md-12 {
+    width: 99%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-11 {
+    width: 90.75%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-10 {
+    width: 82.5%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-9 {
+    width: 74.25%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-8 {
+    width: 66%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-7 {
+    width: 57.75%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-6 {
+    width: 49.5%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-5 {
+    width: 41.25%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-4 {
+    width:33%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-3 {
+    width: 24.75%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-2 {
+    width: 16.5%;
+    /*margin: 0.2%;*/
+  }
+  .f-md-1 {
+    width: 8.25%;
+    /*margin: 0.2%;*/
   }
 }
 @media (min-width: 992px){
@@ -577,6 +732,55 @@ animation-duration: 1s;
     min-height: 100px;
     /*border: 1px solid black;*/
   }
+  /* fields */
+  .f-lg-12 {
+    width: 99%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-11 {
+    width: 90.75%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-10 {
+    width: 82.5%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-9 {
+    width: 74.25%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-8 {
+    width: 66%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-7 {
+    width: 57.75%;
+    margin: 0.2%;
+  }
+  .f-lg-6 {
+    width: 49.5%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-5 {
+    width: 41.25%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-4 {
+    width:33%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-3 {
+    width: 24.50%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-2 {
+    width: 16.5%;
+    /*margin: 0.2%;*/
+  }
+  .f-lg-1 {
+    width: 8.25%;
+    /*margin: 0.2%;*/
+  }
 }
 @media (min-width: 1200px){
   .row > *::after {
@@ -662,6 +866,55 @@ animation-duration: 1s;
     width: 8.3%;
     /*margin: 0.5%;*/
     min-height: 100px;
+  }
+  /* fields */
+  .f-xlg-12 {
+    width: 99%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-11 {
+    width: 90.75%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-10 {
+    width: 82.5%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-9 {
+    width: 74.25%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-8 {
+    width: 66%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-7 {
+    width: 57.75%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-6 {
+    width: 49.5%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-5 {
+    width: 41.25%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-4 {
+    width:33%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-3 {
+    width: 24.75%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-2 {
+    width: 16.5%;
+    /*margin: 0.5%;*/
+  }
+  .f-xlg-1 {
+    width: 8.25%;
+    /*margin: 0.5%;*/
   }
     @keyframes slide-to-left {
       from {

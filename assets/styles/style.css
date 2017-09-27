@@ -809,6 +809,219 @@
 .slideshow .slide-pointer li.active a {
   color: #F85A3E;
 }
+.trainers {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+
+}
+.trainers .header .heading {
+  padding: 0 10px;
+  min-height: 70px;
+  padding-left: 20px;
+}
+.trainers .body {
+  padding-left: 20px;
+  color: #ACACAC;
+}
+.trainers .heading h4 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #000;
+}
+.trainers .header p {
+  color: #F85A3E;
+  margin: 1px;
+  font-weight: 100;
+  margin: 0;
+}
+.trainers .header .icon {
+  color: #F85A3E;
+  text-align: center;
+  margin-left: -10px;
+}
+.trainers .header .icon i {
+  font-size: 24px;
+  line-height: 40px;
+  padding-left:8px;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+}
+.trainers .item {
+  width:90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 0.1px 0.1px 0.1px 0.1px #ACACAC;
+  position: relative;
+}
+.trainers  img {
+  width:100%;
+}
+.trainers .footer .icons {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 10px;
+}
+.trainers .icons li {
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  padding-top: 2px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #F85A3E;
+  line-height: 40px;
+  text-align: center;
+}
+.f-lg-4 ,.f-md-3 ,.f-sm-2 ,.f-xs-1, .f-xs-12 {
+  /*background-color: gray;*/
+}
+.trainers .icons li a {
+  color: #fff;
+}
+.trainers .icons li:hover {
+  background-color: #2b2c2d;
+}
+.trainers .hover-details .fa {
+  padding-right: 10px;
+}
+.trainers .hover-details  ul{
+  list-style: none;
+  padding: 20px;
+  border-bottom: 1px solid #fff;
+}
+.trainers .hover-details li {
+  padding: 5px 0px;
+}
+.trainers .image {
+  position: relative;
+  width: 100%;
+  height:100%;
+}
+.trainers .hover-details {
+  top:-58%;
+}
+.trainers .hover-same, .trainers .hover-details   {
+  background-color: rgba(242,90,68,1);
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  transform-origin: bottom;
+}
+.trainers .item:hover .hover-same, .trainers .item:hover .hover-details{
+  visibility: visible;
+  animation: slide-top 0.5s ease;
+}
+.trainers .hover-same h4,.trainers .hover-same p {
+  color: #fff;
+}
+.trainers .hover-same .icon i, .trainers .hover-same .footer li, .trainers .hover-same .footer a{
+  background-color: #fff;
+  color: rgba(242,90,68,0.9);
+}
+.iphone {
+  min-height: 600px;
+  background: transparent url("/assets/images/background.png");
+  background-size: contain;
+  position: relative;
+}
+.iphone .bg-color {
+  background-color: rgba(242,90,68,0.8);
+  min-height: inherit;
+  text-align: center;
+}
+.iphone .arrow {
+  width: 150px;
+  position: absolute;
+  left: 70px;
+  top: 100px;
+}
+.iphone h1 {
+  font-size: 56px;
+  font-weight: 100;
+  margin-bottom: 1px;
+}
+.iphone img {
+  /*padding-top: 40px;*/
+}
+.iphone li .fa {
+  padding-right: 10px;
+}
+.iphone ul {
+  list-style: none;
+  padding-left: 0;
+}
+.iphone li {
+  display: inline-block;
+  padding: 5px 5px;
+}
+.iphone .content {
+  padding-top: 40px;
+  text-align: left;
+}
+.iphone .app-store {
+  text-align: left;
+}
+.contact-us {
+  background: transparent url("/assets/images/subscribe-bg.png");
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.contact-us .contact-form {
+  padding-top: 100px;
+}
+.contact-us input {
+  background: url("/assets/images/name-bg.png");
+  background-size: cover;
+  margin-right: 27px;
+  padding: 0 15px;
+  color: #ffffff;
+  border: 1px solid #2b2c2d;
+  border-radius: 10px;
+}
+.contact-us #name {
+  width: 260px;
+  height: 55px;
+}
+.contact-us #email{
+  width: 300px;
+  height: 55px;
+}
+.contact-us h1 {
+  font-size: 36px;
+}
+.contact-us .input-name {
+  margin-left: 30px;
+}
+.contact-us h2 {
+  font-family: 'Oregano', cursive;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 12px;
+
+}
+.contact-us span {
+  color: rgba(242,90,68,1);
+  display: inline-block;
+}
+.contact-us button {
+  font-family: 'Oregano', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  width: 200px;
+  height: 55px;
+  color: #fff;
+  background-color: rgba(242,90, 68, 1);
+  border: 1px solid rgba(242,90, 68, 0.5);
+}
 /*---------------------headings---------------------------------------
 --------------------------------------------------------------------------*/
 .benefit, .heading-container {
@@ -850,6 +1063,13 @@
     margin-top: 20px;
   }
   .menu {
+    display: none;
+  }
+  .contact-us {
+    background-position: right;
+    overflow: visible;
+  }
+  .contact-us img {
     display: none;
   }
   .header-contact-us, .header-contact-us::before {
@@ -1174,5 +1394,14 @@
   to {
     margin-left: 0%;
     width: 100%;
+  }
+}
+@keyframes slide-top {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
   }
 }
