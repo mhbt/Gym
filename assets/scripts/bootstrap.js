@@ -163,3 +163,26 @@ if(document.querySelector(".slideshow2")){
       }
   }
 }
+
+
+// accordion
+if(document.querySelector(".accordion")){
+  console.log("accordion enabled");
+  var panels = document.querySelectorAll(".accordion .panel");
+  panels.forEach((panel)=>{
+    panel.querySelector(".toggle").addEventListener("click",(e)=>{
+      e.preventDefault();
+      var is_collapsed = panel.querySelector(".toggle .fa");
+      if(is_collapsed.classList.contains("fa-minus")) {
+        is_collapsed.classList.remove("fa-minus");
+        is_collapsed.classList.add("fa-plus");
+        panel.querySelector(".panel .panel-body").classList.add("collapse");
+      }
+      else {
+        is_collapsed.classList.remove("fa-plus");
+        is_collapsed.classList.add("fa-minus");
+        panel.querySelector(".panel .panel-body").classList.remove("collapse");
+      }
+    });
+  });
+}

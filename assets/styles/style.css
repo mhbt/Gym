@@ -1084,6 +1084,35 @@
 .faq {
   color: black;
 }
+.accordion .panel {
+  width: 100%;
+  /*background-color: yellow;*/
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+.accordion .panel .collapse {
+  display: none;
+}
+.accordion .panel-title .fa {
+  line-height: 28px;
+}
+.accordion .panel-title a {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  /*padding: 5px;*/
+  line-height: normal;
+  color: #f1f1f1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  margin-right: 40px;
+}
+.accordion .panel-title a.active, .accordion .panel-title a:hover{
+  color: rgba(242,90, 68, 1);
+  border: 2px solid rgba(242,90, 68, 1);
+}
 footer {
   font-family: 'Raleway', sans-serif;
   background-color: #141516;
