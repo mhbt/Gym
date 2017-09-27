@@ -181,6 +181,14 @@ if(document.querySelector(".accordion")){
       else {
         is_collapsed.classList.remove("fa-plus");
         is_collapsed.classList.add("fa-minus");
+        panels.forEach((panel)=>{
+          if(!panel.querySelector(".panel-body").classList.contains("collapse")){
+              var collapse= panel.querySelector(".toggle .fa");
+              collapse.classList.remove("fa-minus");
+              collapse.classList.add("fa-plus");
+              panel.querySelector(".panel-body").classList.add("collapse");
+          }
+        });
         panel.querySelector(".panel .panel-body").classList.remove("collapse");
       }
     });
