@@ -1036,22 +1036,24 @@
 
 .testimonials {
   position: relative;
+  min-height: 400px;
+  overflow: hidden;
 }
 .testimonials .slideshow2{
-  position:relative;
   color: #000;
 }
-.testimonials .slideshow .block-quote{
+.testimonials .slideshow2 .block-quote{
     text-align: right;
 }
 .testimonials .slideshow2 .fa-quote-left{
   color: #c1c1c1;
   font-size: 42px;
 }
-
 .testimonials  .slide-pointers-2{
   padding-left: 0;
   list-style: none;
+  position: absolute;
+  bottom: 0;
 }
 .testimonials .slide-pointers-2 li {
   display: inline-block;
@@ -1062,21 +1064,25 @@
 }
 .testimonials .slides2 li{
   visibility: collapse;
+  display: none;
 }
 .testimonials .slides2 li.active {
-  position: relative;
   display: block;
   visibility: visible;
   color: #000;
+  position: absolute;
 }
 .testimonials .slide-pointers-2 li.active a{
   color: rgba(242, 90, 68, 1);
 }
-.testimonials .slides2  a{
+.testimonials .slide-pointers-2  a{
   color: #c1c1c1;
 }
 .testimonials .slideshow2 a:hover{
   color: rgba(242, 90, 68, 1);
+}
+.faq {
+  color: black;
 }
 footer {
   font-family: 'Raleway', sans-serif;
