@@ -1022,6 +1022,118 @@
   background-color: rgba(242,90, 68, 1);
   border: 1px solid rgba(242,90, 68, 0.5);
 }
+footer {
+  font-family: 'Raleway', sans-serif;
+  background-color: #141516;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+}
+footer button {
+  font-family: 'Raleway', sans-serif;
+  min-width: 100px;
+  width: 90%;
+  height: 50px;
+  color: white;
+  margin-right: 5%;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #F85A3E;
+  border: 2px solid #F85A3E;
+  border: none;
+}
+footer button > .caret {
+  visibility: collapse;
+  margin-left: 0%;
+
+}
+footer button:hover {
+  background-color: #2b2c2d;
+  border: 1px solid #2b2c2d;
+  transition: background 1s ease;
+}
+footer button:hover > .caret {
+  visibility: visible;
+  display: inline-block;
+  margin-left: 10px;
+  transition: all 0.5s ease;
+  line-height: 14px;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+
+}
+footer ul li {
+  line-height: 30px;
+  font-size: 14px;
+}
+footer  a {
+  color: #fff;
+  text-decoration: none;
+}
+footer  a:hover {
+  color: rgba(242,90,68,1);
+}
+.quick-links-2 {
+  border-left: 1px solid #1c1c1c;
+  padding-left: 30px;
+}
+footer .heading {
+  background: transparent url("/assets/images/title-bg-footer.png");
+  text-align: center;
+}
+footer h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 15px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+footer img {
+  width: 90%;
+}
+footer h4 {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+}
+footer .image-holder {
+  position: relative;
+}
+footer  .image-holder .bg{
+  visibility: hidden;
+  position: absolute;
+  width:90%;
+  height: 100%;
+  background-color: rgba(242,90,68,0.8);
+}
+footer .news:hover .bg {
+  visibility: visible;
+  animation: center-fill 0.2s ease;
+}
+footer .image-holder .bg {
+  text-align: center;
+  padding-top: 20%;
+  font-size: 30px;
+}
+footer .news {
+  border-bottom: 1px solid #1c1c1c;
+  padding-bottom: 10px;
+}
+footer .locus .fa {
+  line-height: 30px;
+  font-size: 20px;
+}
+footer .locus{
+  text-align: center;
+  padding: 20px;
+}
+footer .loca {
+  margin:  20px 0;
+}
+
 /*---------------------headings---------------------------------------
 --------------------------------------------------------------------------*/
 .benefit, .heading-container {
