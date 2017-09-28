@@ -901,7 +901,8 @@
   height:100%;
 }
 .trainers .hover-details {
-  top:-58%;
+  top:-54%;
+  font-size: 14px;
 }
 .trainers .hover-same, .trainers .hover-details   {
   background-color: rgba(242,90,68,1);
