@@ -1089,12 +1089,24 @@
   /*background-color: yellow;*/
   border-top: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
+  position: relative;
+  overflow: hidden;
 }
 .accordion .panel .collapse {
   display: none;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  transform-origin: top;
 }
 .accordion .panel-title .fa {
   line-height: 28px;
+}
+.accordion .panel-title{
+  margin: 4px;
+}
+.accordion .panel-header {
+  position: relative;
+  overflow: hidden;
 }
 .accordion .panel-title a {
   text-align: center;
@@ -1112,6 +1124,22 @@
 .accordion .panel-title a.active, .accordion .panel-title a:hover{
   color: rgba(242,90, 68, 1);
   border: 2px solid rgba(242,90, 68, 1);
+}
+.accordion .panel-body {
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  transform-origin: top;
+}
+.open-y {
+  animation-name: open-y;
+}
+.close-y {
+  animation-name: close-y;
+}
+.testimonials p, .accordion .panel-body  {
+  font-family: 'Raleway',sans-serif;
+  font-size: 15px;
+  color: #B4B4B4;
 }
 footer {
   font-family: 'Raleway', sans-serif;

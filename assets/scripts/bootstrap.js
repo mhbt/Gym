@@ -176,7 +176,11 @@ if(document.querySelector(".accordion")){
       if(is_collapsed.classList.contains("fa-minus")) {
         is_collapsed.classList.remove("fa-minus");
         is_collapsed.classList.add("fa-plus");
-        panel.querySelector(".panel .panel-body").classList.add("collapse");
+        panel.querySelector(".panel-body").classList.add("close-y");
+        setTimeout(()=>{
+          panel.querySelector(".panel-body").classList.add("collapse");
+          panel.querySelector(".panel-body").classList.remove("close-y");
+        },550);
       }
       else {
         is_collapsed.classList.remove("fa-plus");
@@ -186,10 +190,19 @@ if(document.querySelector(".accordion")){
               var collapse= panel.querySelector(".toggle .fa");
               collapse.classList.remove("fa-minus");
               collapse.classList.add("fa-plus");
-              panel.querySelector(".panel-body").classList.add("collapse");
+                panel.querySelector(".panel-body").classList.add("close-y");
+              setTimeout(()=>{
+                panel.querySelector(".panel-body").classList.add("collapse");
+                panel.querySelector(".panel-body").classList.remove("close-y");
+              },550);
+              // panel.querySelector(".panel-body").classList.add("collapse");
           }
         });
         panel.querySelector(".panel .panel-body").classList.remove("collapse");
+        panel.querySelector(".panel .panel-body").classList.add("open-y");
+        setTimeout(()=>{
+          panel.querySelector(".panel .panel-body").classList.remove("open-y");
+        }, 600);
       }
     });
   });

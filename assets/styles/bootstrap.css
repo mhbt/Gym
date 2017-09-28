@@ -971,7 +971,34 @@ animation-duration: 1s;
 /*---------------------Animations---------------------
 -----------------------------------------------------*/
 
-
+@keyframes open-y {
+  from {
+    height: 0px;
+      /*transform: translate3d(0,-100px,0);*/
+      /*transform: scaleY(0);*/
+      transform-origin: top;
+  }
+  to {
+      height: 90px;
+      /*transform: scaleY(1);*/
+        /*transform: translate3d(0,0,0);*/
+      transform-origin: top;
+  }
+}
+@keyframes close-y {
+  from {
+      height: 90px;
+      /*transform: translate3d(0,0,0);*/
+      /*transform: scaleY(1);*/
+      transform-origin: top;
+  }
+  to {
+    height: 0px;
+      /*transform: translate3d(0,-100px,0);*/
+      /*transform: scaleY(0);*/
+      transform-origin: top;
+  }
+}
 
 
 /*Panel*/
